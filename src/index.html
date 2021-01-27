@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>MojoPal</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--NAVIGATION-->
+  <nav class="navbar fixed-top navbar-expand-sm bg-primary navbar-primary  py-4">
+    <div class="container">
+      <a href="index.html" class="navbar-brand text-white">MojoPal</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon">Menu</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active text-white">Transact<i class="fa fa-money pl-2 text-white"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#historyModal">History<i class="fa fa-cloud pl-2 text-white"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#accountsModal">Accounts<i class="fa fa-bank pl-2 text-white"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white" data-toggle="modal" data-target="#settingsModal">Settings<i class="fa fa-user pl-2 text-white"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+
+  <!--INTRO-->
+  <div class="container mt-5 py-5" id="intro">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <br>
+        <br>
+        <img id="logo" class="img-fluid" src="img/mlogo.png" alt="">
+        <h1 class="display-4">Mojopal</h1>
+
+      </div>
+      <div class="col-lg-12 text-center">
+        <h1 class="display-6">Seamless, Painless Transactions</h1>
+        <hr class="bg-success">
+        <br>
+        <br>
+
+      </div>
+    </div>
+  </div>
+
+  <!--TRANSACTION BOXES-->
+  <div class="container" id="transaction">
+    <div class="row pb-5">
+      <div class="col-md-4">
+        <div class="card text-center text-white bg-success">
+          <div class="card-header">
+            <h3><i class="fa fa-paypal"></i>TransferTO</h3>
+          </div>
+          <div class="card-body">
+            <input type="text" class="form-control" placeholder="TransferTO Account Number">
+            <br>
+            <input type="text" class="form-control" placeholder="Amount To Transfer in USD">
+            <br>
+            <button class="form-control btn-outline-primary text-white">Transact</button>
+          </div>
+          <div class="card-footer">
+            <i class="fa fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center text-white bg-primary">
+          <div class="card-header">
+            <h3><i class="fa fa-tablet"></i>MPESA</h3>
+          </div>
+          <div class="card-body">
+            <input type="text" class="form-control" placeholder="MPESA Account Number">
+            <br>
+            <input type="text" class="form-control" placeholder="Amount To Transfer in USD">
+            <br>
+            <button class="form-control btn-outline-dark text-white">Transact</button>
+          </div>
+          <div class="card-footer">
+            <i class="fa fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center text-white bg-danger">
+          <div class="card-header">
+            <h3><i class="fa fa-safari"></i>WebMoney</h3>
+          </div>
+          <div class="card-body">
+            <input type="text" class="form-control" placeholder="WEBMONEY Account Number">
+            <br>
+            <input type="text" class="form-control" placeholder="Amount To Transfer in USD">
+            <br>
+            <button class="form-control btn-outline-success text-white">Transact</button>
+          </div>
+          <div class="card-footer">
+            <i class="fa fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <hr class="bg-success">
+
+
+
+  <!--FOOTER-->
+  <footer class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center text-white">
+          <h3 class="display-5">MojoPal</h3>
+          <p class="display-6">Copyright &copy;2018-2028</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!--MODALS-->
+
+  <!--HISTORY MODAL-->
+  <div class="modal fade text-dark" id="historyModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-danger">Your Transaction History</h5>
+          <button class="close" data-dismiss="modal"><span>&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <table class="table table stripped table-bordered table-active table-hover">
+            <thead>
+              <tr>
+                <th> Date</th>
+                <th>Account Transfered To</th>
+                <th>Amount</th>
+                <th>Reception Status</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+
+                <th scope="row">1/10/2018 </th>
+                <td>08963</td>
+                <td>$25,200.00</td>
+                <td>Received <span class="i fa fa-check text-success"></span></td>
+
+              </tr>
+
+              <tr>
+
+                <th scope="row">15/10/2018 </th>
+                <td>08893</td>
+                <td>$25,000.00</td>
+                <td>Pending <span class="i fa fa-check text-secondary"></span></td>
+
+              </tr>
+              <tr>
+
+                <th scope="row">1/11/2018 </th>
+                <td>089635896</td>
+                <td>$15,200.00</td>
+                <td>Not Sent <span class="i fa fa-warning text-danger"></span></td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-success btn-sm btn-block">Load More <span class="fa fa-cloud"></span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--ACCOUNTS MODAL-->
+  <div class="modal fade text-dark" id="accountsModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Your Mojopal Accounts</h5>
+          <button class="close" data-dismiss="modal"><span>&times;</span></button>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="card-header">
+              <h5>Welcome <span class="fa fa-user"></span> Kevin Tum</h5>
+            </div>
+            <div id="accordion" role="tablist">
+              <div class="card">
+                <div class="card-header" id="heading1">
+                  <h5 class="mb-0">
+                    <div href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+                      <i class="fa fa-arrow-down text-danger">Acc MJ8969369</i>
+
+                    </div>
+                  </h5>
+                </div>
+
+                <div id="collapse1" class="collapse show">
+                  <div class="card-body bg-success">
+                    <table class="table table-responsive">
+                      <thead>
+                        <tr>
+                          <th>Date Opened</th>
+                          <th>Total Transactions</th>
+                          <th>Credit Cards Attached</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1/10/2018 </th>
+                          <td>$225,200.00</td>
+                          <td>3</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card">
+                <div class="card-header" id="heading1">
+                  <h5 class="mb-0">
+                    <div href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+                      <i class="fa fa-arrow-down text-primary">Acc MJ5963458</i>
+
+                    </div>
+                  </h5>
+                </div>
+
+                <div id="collapse2" class="collapse">
+                  <div class="card-body bg-primary">
+                    <table class="table table-responsive">
+                      <thead>
+                        <tr>
+                          <th>Date Opened</th>
+                          <th>Total Transactions</th>
+                          <th>Credit Cards Attached</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1/10/2017 </th>
+                          <td>$625,200.00</td>
+                          <td>5</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-block btn-outline-primary"><span class="fa fa-plus"></span> Add Account</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!--SETTINGS MODAL-->
+
+  <div class="modal modal-fade text-dark" id="settingsModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Set Preferences Here</h5>
+          <button class="close" data-dismiss="modal"><span>&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <div class="card">
+            <div class="card-body">
+              <form class="form-inline">
+                <div class="form-group">
+                  <label for="username" class="form-control text-danger">Username <span class="fa fa-user "></span></label>
+                  <input type="text" placeholder="@Kevin_Tum" class="form-control" name="username">
+
+                  <label for="password " class="form-control text-danger">Password <span class="fa fa-expeditedssl"></span></label>
+                  <input type="password" class="form-control" name="password" placeholder="password">
+                </div>
+              </form>
+              <br>
+              <div class="div">
+                <h5>Show Balance On Logging In?</h5>
+                <input type="checkbox" class="c-input c-checkbox ">
+              </div>
+              <br>
+              <div>
+                <h5>Default Mojopal Transaction Third Party:</h5>
+                <div class="radio">
+                  <label><input type="radio" name="mpesa" checked>MPESA <i class="fa fa-tablet"></i></label>
+                  <label><input type="radio" name="paypal">PayPal <i class="fa fa-paypal"></i></label>
+                  <label><input type="radio" name="webmoney">WebMoney <i class="fa fa-safari"></i></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn-outline-success btn btn-block"><i class="fa fa-check"></i>Save Changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="js/jquery.min.js "></script>
+  <script src="js/popper.min.js "></script>
+  <script src="js/bootstrap.min.js "></script>
+
+</body>
+
+</html>

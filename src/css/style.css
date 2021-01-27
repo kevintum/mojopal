@@ -1,0 +1,15 @@
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+#logo {
+  height: 100px;
+}
+.nav-item {
+  font-size: 19px;
+}
+.nav-link.active {
+  border-left: #fff 2px solid;
+}
+.navbar-brand {
+  font-size: 18px;
+}
